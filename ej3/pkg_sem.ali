@@ -1,0 +1,79 @@
+V "GNAT Lib v8"
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U pkg_sem%b		pkg_sem.adb		01e90a92 NE OO PK IL
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U pkg_sem%s		pkg_sem.ads		89ae6cd5 EE NE OO PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+
+D ada.ads		20170911084841 76789da1 ada%s
+D a-except.ads		20180111085525 291912d5 ada.exceptions%s
+D a-finali.ads		20180111085525 bf4f806b ada.finalization%s
+D a-stream.ads		20180111085525 119b8fb3 ada.streams%s
+D a-tags.ads		20180111085525 491b781d ada.tags%s
+D a-unccon.ads		20170908151217 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180111085525 5ab55268 interfaces%s
+D i-c.ads		20170908151217 5421119b interfaces.c%s
+D pkg_sem.ads		20210507082827 89ae6cd5 pkg_sem%s
+D pkg_sem.adb		20210507091833 88476647 pkg_sem%b
+D system.ads		20180111085525 4635ec04 system%s
+D s-atacco.ads		20180111085525 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20180111085525 54135002 system.exception_table%s
+D s-finroo.ads		20180111085525 4ff27390 system.finalization_root%s
+D s-linux.ads		20180111085525 2fda6ad1 system.linux%s
+D s-multip.ads		20170908151217 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190406144455 2a880dab system.os_constants%s
+D s-osinte.ads		20180111085525 c6986a0c system.os_interface%s
+D s-parame.ads		20180111085525 f896c45c system.parameters%s
+D s-secsta.ads		20180111085525 283dec34 system.secondary_stack%s
+D s-soflin.ads		20180111085525 a7318a92 system.soft_links%s
+D s-stache.ads		20180111085525 a37c21ec system.stack_checking%s
+D s-stausa.ads		20180111085525 017a0a05 system.stack_usage%s
+D s-stalib.ads		20180111085525 09bd3940 system.standard_library%s
+D s-stoele.ads		20180111085525 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20180111085525 2b3f8252 system.task_info%s
+D s-taspri.ads		20180111085525 f40ac08d system.task_primitives%s
+D s-taskin.ads		20180111085525 1d8c1ccb system.tasking%s
+D s-taprob.ads		20180111085525 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20180111085525 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20180111085525 5f548bb3 system.tasking.protected_objects.operations%s
+D s-traent.ads		20180111085525 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180111085525 34867c83 system.unsigned_types%s
+X 9 pkg_sem.ads
+1K9*pkg_sem 6E19 12l5 12e12 10|1b14 24l5 24t12
+2W9*sem_t 3r34 4r32 6d25 10E7 11l8 11e13 10|3r38 8r36 13b24 23l13 23t18
+3U14*signal 3=21 10|3b19 6l13 6t19
+3w21 sem{2W9} 10|3b26 5r17
+4U14*wait 4=19 10|8b19 11l13 11t17
+4w19 sem{2W9} 10|8b24 10r17
+6i25 valor_inicial{integer} 10r30
+7Y13 wait 10|10s21 14b23 17l21 17t25
+8U17 signal 10|5s21 19b27 22l21 22t27
+10i7 valor_sem{integer} 10|14r33 16r25 16r36 21r25 21r36
+X 23 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
